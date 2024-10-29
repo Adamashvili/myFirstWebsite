@@ -1,0 +1,54 @@
+input[type='radio'] {
+    accent-color: #232323;
+}
+
+h5 span {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: green;
+}
+
+.image {
+    width: 400px;
+    height: 400px;
+    position: relative;
+    
+}
+
+.image::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: rgb(14, 128, 14);
+    left: 0;
+    opacity: 0.3;
+    
+    
+}
+
+/* .image:hover::after {
+    opacity: 0.3;
+} */
+ img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 1s;
+    position: relative;
+    display: inline-block;
+} 
+
+/* img::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: green;
+    position: absolute;
+} */ */
+
+img:hover {
+    filter:brightness(200%);
+}
